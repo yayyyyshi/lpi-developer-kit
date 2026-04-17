@@ -1,4 +1,4 @@
-# How I Did It - Track A Level 3
+# How I Did It - Track A (Level 2 & Level 3)
 
 ### What I did, step by step
 1. Verified the LPI MCP Server was working correctly by running `npm run test-client`.

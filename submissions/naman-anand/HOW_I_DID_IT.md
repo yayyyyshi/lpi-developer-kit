@@ -1,6 +1,3 @@
-### File 1: `HOW_I_DID_IT.md`
-
-
 # HOW I DID IT - Level 2 (Track E)
 
 **Contributor:** Naman Anand

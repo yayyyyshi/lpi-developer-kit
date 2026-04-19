@@ -90,19 +90,3 @@ python agent.py "your query"
 * Python
 * Node.js (LPI MCP Server)
 * Ollama (Local LLM)
-
-
-## Requirements Completed
-
-* [x] Accepts user input
-* [x] Uses multiple LPI tools
-* [x] Processes tool results
-* [x] Generates structured answers
-* [x] Provides explainability with sources
-
-
-## Checklist
-
-* [x] I read the README and CONTRIBUTING guide
-* [x] My PR title follows the format: `level-3: Khushi Garg`
-* [x] I tested my changes locally before submitting

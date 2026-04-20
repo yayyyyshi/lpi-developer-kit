@@ -1348,6 +1348,26 @@
       "score_pct": 8
     },
     {
+      "name": "V Bharath Raju",
+      "github": "bharathraju03",
+      "skills": [
+        "python",
+        "pytorch",
+        "react",
+        "java",
+        "C++",
+        "aptitude",
+        "reosoning"
+      ],
+      "interests": [
+        "cybersecurity",
+        "problem solving",
+        "Data Structures and algorithms"
+      ],
+      "track": " E: QA & Security",
+      "level": 3
+    },
+    {
       "name": "Ayush Sharma",
       "github": "Im-Ayushh",
       "skills": [
@@ -1696,26 +1716,6 @@
         "startups"
       ],
       "track": "A: Agent Builders / B: Content & Research / C: Design & UX / D: 3D & Visualization / E: QA & Security",
-      "level": 1
-    },
-    {
-      "name": "V Bharath Raju",
-      "github": "bharathraju03",
-      "skills": [
-        "python",
-        "pytorch",
-        "react",
-        "java",
-        "C++",
-        "aptitude",
-        "reosoning"
-      ],
-      "interests": [
-        "cybersecurity",
-        "problem solving",
-        "Data Structures and algorithms"
-      ],
-      "track": " E: QA & Security",
       "level": 1
     },
     {

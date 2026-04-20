@@ -3,15 +3,20 @@ import sys
 
 query = sys.argv[1]
 
-# ---- TOOL FUNCTIONS ----
+BASE_URL = "http://localhost:8000"   # LPI sandbox URL
+
+# ---- REAL LPI TOOL CALLS ----
 def smile_overview():
-    return "SMILE methodology focuses on structured explainability."
+    res = requests.get(f"{BASE_URL}/smile_overview")
+    return res.json()
 
 def query_knowledge(q):
-    return f"Knowledge about '{q}': Used in modern systems."
+    res = requests.get(f"{BASE_URL}/query_knowledge", params={"query": q})
+    return res.json()
 
 def get_case_studies(q):
-    return f"Case study: '{q}' used in healthcare and finance."
+    res = requests.get(f"{BASE_URL}/get_case_studies", params={"query": q})
+    return res.json()
 
 # ---- CALL TOOLS ----
 smile = smile_overview()
@@ -30,7 +35,7 @@ CASE STUDIES:
 {cases}
 """
 
-# ---- CALL LLM ----
+# ---- LLM CALL ----
 def call_llm(prompt):
     try:
         res = requests.post(
@@ -39,11 +44,11 @@ def call_llm(prompt):
         )
         return res.json()["response"]
     except:
-        return "LLM not running. Showing raw output:\n" + prompt
+        return "LLM not running.\n" + prompt
 
 final = call_llm(combined)
 
-# ---- PRINT OUTPUT ----
+# ---- OUTPUT ----
 print("\n--- SMILE OVERVIEW ---")
 print(smile)
 
